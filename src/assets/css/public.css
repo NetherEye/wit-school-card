@@ -1,0 +1,487 @@
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+i {
+	font-style: normal
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "微软雅黑", "Microsoft YaHei", "PingFang SC";
+	font-weight: 400;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+#app {
+	height: 100%;
+}
+
+.btn2 {
+	width: 130px;
+	height: 30px;
+	background-color: #07bde4;
+	border-radius: 4px;
+	border: solid 1px #eeeeee;
+	user-select: none;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+
+.btn {
+	width: 100px;
+	height: 30px;
+	background-color: #07bde4;
+	border-radius: 4px;
+	border: solid 1px #eeeeee;
+	user-select: none;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+
+.text-btn {
+	display: inline-block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #09a4c7;
+	user-select: none;
+	cursor: pointer;
+}
+
+.filter {
+	display: flex;
+	margin-top: 20px;
+	margin-left: 37px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.filter-item {
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.filter-item .label {
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #919d9f;
+	white-space: nowrap;
+	margin-right: 7px;
+}
+
+
+.filter .el-select {
+	width: 194px;
+}
+
+.filter .el-input {
+	width: 244px;
+}
+
+.filter .el-select .el-input {
+	width: 100%;
+}
+
+.el-table--scrollable-y .el-table__body-wrapper {
+	overflow: auto;
+}
+
+/* 表格 */
+.table {
+	margin: 10px 10px;
+	padding: 10px 10px;
+	position: relative;
+}
+
+.table .tableTou {
+	height: 65px;
+	background: url(../3.png);
+	border-bottom: none !important;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #f1fbfd;
+
+}
+
+.table .el-table__header-wrapper {
+	position: relative;
+	box-shadow: 0px 7px 9px 0px rgba(46, 192, 225, 0.22);
+	z-index: 999;
+}
+
+.table .tableTou:first-child {
+	position: relative;
+}
+
+.left_ear {
+	width: 19px;
+	height: 65px;
+	position: absolute;
+	background: url(../1.png) no-repeat;
+	left: -7px;
+	z-index: 999;
+	box-shadow: 0px 7px 9px 0px rgba(46, 192, 225, 0.22);
+}
+
+.right_ear {
+	width: 19px;
+	height: 65px;
+	position: absolute;
+	background: url(../2.png) no-repeat;
+	right: -7px;
+	z-index: 999;
+	box-shadow: 0px 7px 9px 0px rgba(46, 192, 225, 0.22);
+}
+
+.table .el-table {
+	position: relative;
+	box-shadow: 0px 2px 9px 0px rgba(105, 105, 105, 0.07);
+
+}
+
+.table .el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+	display: none;
+}
+
+
+.table .tableRow {
+	height: 56px;
+	border-bottom: 1px dashed #e4e4e4;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #485a5d;
+}
+
+.table .el-table__footer-wrapper tr td {
+	font-size: 16px;
+	letter-spacing: 2px;
+
+
+	background: #fff;
+}
+
+.table .el-table__footer-wrapper tr td>div {
+	font-family: "microsoft yahei";
+	font-weight: bold;
+	color: #485a5d;
+}
+
+
+/* 省略类名 */
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+/* 滚动条样式 */
+
+/* 滚动条样式 */
+.el-table__body-wrapper {
+	overflow-y: hidden !important;
+}
+
+.el-table__body-wrapper:hover {
+	overflow-y: auto !important;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	overflow: auto
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #e6e6e6;
+	min-height: 25px;
+	min-width: 25px;
+	border: 1px solid #e0e0e0
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f7f7f7;
+	border: 1px solid #efefef
+}
+
+
+/* 分页样式 */
+
+.table .fenye {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 9px 0px rgba(105, 105, 105, 0.07);
+	position: relative;
+	z-index: 999;
+	padding: 32px 0;
+}
+
+.fenye {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 999;
+	padding: 32px 0;
+}
+
+/*.fenye_title {
+	font-size: 14px;
+	color: rgba(164, 168, 179, 1);
+	margin-left: 81px;
+}*/
+
+.fenye .el-pagination {
+	margin-right: 40px;
+}
+
+.fenye .el-pager li {
+	color: #666666;
+	font-size: 14px;
+}
+
+.fenye .el-pager li:hover {
+	color: #31c1e2;
+	font-size: 14px;
+}
+
+.fenye .el-pager li.active {
+	color: #31c1e2;
+}
+
+.fenye .el-input__inner {
+	color: #31c1e2 !important;
+}
+
+.wu_bt1 {
+	width: 100px;
+	height: 30px;
+	border-radius: 4px;
+	color: #e2f2ff;
+	border: none;
+	cursor: pointer;
+}
+
+.wu_bt2 {
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 1px;
+}
+
+.wu_bt3 {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 1px;
+	color: #0489e2;
+	cursor: pointer;
+}
+
+.wu_ys1 {
+	background-color: #3ca0ec;
+}
+
+.wu_ys2 {
+	background-color: #fe4949;
+}
+
+.wu_ys3 {
+	background-color: #8fc32c;
+}
+
+.some-table thead td,
+th {
+	background-color: #f3faff !important
+}
+
+.el-table__empty-block {
+	overflow-y: auto;
+}
+
+.table {
+	flex: 1;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+
+/* 弹框 */
+
+.pwdDialog {
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 3px 8px 0px rgba(41, 48, 56, 0.18);
+}
+
+.pwdDialog .el-dialog__header {
+	height: 62px;
+	background-color: #2ec0e1;
+
+}
+
+.pwdDialog .el-dialog__title {
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #ffffff;
+}
+
+.pwdDialog .el-dialog__close {
+	width: 31px;
+	height: 31px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.pwdDialog .el-dialog__close:before {
+	content: url(../cls.png);
+}
+
+.pwdDialog .p_item {
+	height: 50px;
+	letter-spacing: 1px;
+	color: #919d9f;
+	font-size: 14px;
+	border-bottom: 1px dashed #E4E4E4;
+	line-height: 50px;
+}
+
+.pwdDialog .el-dialog__body {
+	padding: 0 !important;
+}
+
+.pwdDialog .dialog-footer {
+	display: flex;
+	justify-content: center;
+}
+
+/* 弹框表格 */
+.d-tableRow {
+	height: 55px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #919d9f;
+	position: relative;
+	z-index: 1;
+}
+
+.d-tableTou {
+	background: #f4f4f4 !important;
+	height: 40px !important;
+	letter-spacing: 1px;
+	color: #919d9f;
+}
+
+/* el-form-item */
+.el-form-item__label {
+	font-size: 14px !important;
+	letter-spacing: 1px !important;
+	color: #919d9f !important;
+
+}
+
+.tz_input .el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+	width: 100%;
+}
+
+/* 表单 */
+.edit {
+	padding: 0 40px 30px;
+}
+
+.btn1 {
+	margin: 20px auto 0;
+}
+
+.edit .el-form-item {
+	margin-bottom: 0;
+}
+
+.edit .el-form--label-top .el-form-item__label {
+	padding: 0;
+	padding-top: 10px;
+}
+
+.edit .el-form-item__label {
+	color: #606266 !important;
+}
+
+.edit .el-textarea__inner {
+	height: 250px;
+}
+
+.edit .input .el-input__inner {
+	height: 30px;
+	line-height: 30px;
+}
+
+.el-dialog__footer .dialog-footer {
+	display: flex;
+	justify-content: space-around;
+}
